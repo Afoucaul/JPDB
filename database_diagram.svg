@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="66cm" height="28cm" viewBox="73 153 1310 542" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="569" y="153" width="180" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="569" y="153" width="180" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="659" y="167">words</text>
+    <rect style="fill: #ffffff" x="569" y="171" width="180" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="569" y="171" width="180" height="52"/>
+    <polygon style="fill: #000000" points="572,181 574,184 576,181 574,178 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="578" y="187">id_word</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="688.1" y="187">integer</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="578" y1="188.6" x2="742" y2="188.6"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="574" cy="197" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="578" y="203">kanas</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="688.1" y="203">varchar</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="574" cy="213" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="578" y="219">studied_times</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="688.1" y="219">integer</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="590" y="486" width="149.2" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="590" y="486" width="149.2" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="664.6" y="500">kanjis</text>
+    <rect style="fill: #ffffff" x="590" y="504" width="149.2" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="590" y="504" width="149.2" height="52"/>
+    <polygon style="fill: #000000" points="593,514 595,517 597,514 595,511 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="599" y="520">id_kanji</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="678.3" y="520">integer</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="599" y1="521.6" x2="732.2" y2="521.6"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="595" cy="530" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="599" y="536">character</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="678.3" y="536">varchar</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="595" cy="546" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="599" y="552">strokes</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="678.3" y="552">int</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="74" y="317" width="334" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="74" y="317" width="334" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="241" y="331">words_kanjis</text>
+    <rect style="fill: #ffffff" x="74" y="335" width="334" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="74" y="335" width="334" height="52"/>
+    <polygon style="fill: #000000" points="77,345 79,348 81,345 79,342 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="83" y="351">id_word</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="154.6" y="351">integer &lt;FK_words_kanjis_words&gt;</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="83" y1="352.6" x2="393.3" y2="352.6"/>
+    <ellipse style="fill: #000000" cx="79" cy="361" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83" y="367">id_kanji</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="154.6" y="367">integer &lt;FK_words_kanjis_kanjis&gt;</text>
+    <polygon style="fill: #000000" points="77,377 79,380 81,377 79,374 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="83" y="383">position</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="154.6" y="383">integer</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="83" y1="384.6" x2="208.5" y2="384.6"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="582" y="334" width="156.9" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="582" y="334" width="156.9" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="660.45" y="348">meanings</text>
+    <rect style="fill: #ffffff" x="582" y="352" width="156.9" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="582" y="352" width="156.9" height="36"/>
+    <polygon style="fill: #000000" points="585,362 587,365 589,362 587,359 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="591" y="368">id_meaning</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="678" y="368">integer</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="591" y1="369.6" x2="731.9" y2="369.6"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="587" cy="378" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="591" y="384">meaning</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="678" y="384">varchar</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="973" y="194" width="380.2" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="973" y="194" width="380.2" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1163.1" y="208">words_meanings</text>
+    <rect style="fill: #ffffff" x="973" y="212" width="380.2" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="973" y="212" width="380.2" height="36"/>
+    <polygon style="fill: #000000" points="976,222 978,225 980,222 978,219 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="982" y="228">id_word</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="1069" y="228">integer &lt;FK_words_meanings_words&gt;</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="982" y1="229.6" x2="1323.1" y2="229.6"/>
+    <polygon style="fill: #000000" points="976,238 978,241 980,238 978,235 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="982" y="244">id_meaning</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="1069" y="244">integer &lt;FK_words_meanings_meanings&gt;</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="982" y1="245.6" x2="1346.2" y2="245.6"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="974" y="412" width="387.9" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="974" y="412" width="387.9" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1167.95" y="426">kanjis_meanings</text>
+    <rect style="fill: #ffffff" x="974" y="430" width="387.9" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="974" y="430" width="387.9" height="36"/>
+    <polygon style="fill: #000000" points="977,440 979,443 981,440 979,437 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="983" y="446">id_kanji</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="1070" y="446">integer &lt;FK_kanjis_meanings_kanjis&gt;</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="983" y1="447.6" x2="1339.5" y2="447.6"/>
+    <polygon style="fill: #000000" points="977,456 979,459 981,456 979,453 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="983" y="462">id_meaning</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="1070" y="462">integer &lt;FK_kanjis_meanings_meanings&gt;</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="983" y1="463.6" x2="1354.9" y2="463.6"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="408,345 499.839,345 499.839,181 558,181 "/>
+    <polygon style="fill: #000000" points="558,186 568,181 558,176 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="558,186 568,181 558,176 "/>
+    <text font-size="9.59961" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="412" y="341">1</text>
+    <text font-size="9.59961" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="565" y="177">n</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="408,361 499,361 499,514 579,514 "/>
+    <polygon style="fill: #000000" points="579,519 589,514 579,509 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="579,519 589,514 579,509 "/>
+    <text font-size="9.59961" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="412" y="357">1</text>
+    <text font-size="9.59961" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="586" y="510">n</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="973,222 864.454,222 864.454,181 760,181 "/>
+    <polygon style="fill: #000000" points="760,176 750,181 760,186 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="760,176 750,181 760,186 "/>
+    <text font-size="9.59961" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="969" y="218">1</text>
+    <text font-size="9.59961" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="753" y="177">n</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="973,238 865,238 865,362 749.9,362 "/>
+    <polygon style="fill: #000000" points="749.9,357 739.9,362 749.9,367 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="749.9,357 739.9,362 749.9,367 "/>
+    <text font-size="9.59961" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="969" y="234">1</text>
+    <text font-size="9.59961" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="742.9" y="358">n</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="974,440 897,440 897,514 750.2,514 "/>
+    <polygon style="fill: #000000" points="750.2,509 740.2,514 750.2,519 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="750.2,509 740.2,514 750.2,519 "/>
+    <text font-size="9.59961" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="970" y="436">1</text>
+    <text font-size="9.59961" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="743.2" y="510">n</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="974,456 865.036,456 865.036,362 749.9,362 "/>
+    <polygon style="fill: #000000" points="749.9,357 739.9,362 749.9,367 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="749.9,357 739.9,362 749.9,367 "/>
+    <text font-size="9.59961" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="970" y="452">1</text>
+    <text font-size="9.59961" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="742.9" y="358">n</text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="1148.47,611.581 1370.07,611.581 1382.07,623.581 1382.07,693.581 1148.47,693.581 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1148.47,611.581 1370.07,611.581 1382.07,623.581 1382.07,693.581 1148.47,693.581 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="1370.07,611.581 1370.07,623.581 1382.07,623.581 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1155.47" y="636.481">
+      <tspan x="1155.47" y="636.481">Project JPBD</tspan>
+      <tspan x="1155.47" y="652.481">Author: Armand FOUCAULT</tspan>
+      <tspan x="1155.47" y="668.481">Database diagram version 1.0</tspan>
+      <tspan x="1155.47" y="684.481">June 02, 2015</tspan>
+    </text>
+  </g>
+</svg>
