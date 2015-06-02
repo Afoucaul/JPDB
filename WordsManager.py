@@ -16,23 +16,23 @@ class WordsManager :
 	def bindKanjisManager(self, kanjisManager) :
 		self.kanjisManager = kanjisManager
 		
-	def constructWord(self, id_word) :
+	def constructWord(self, idWord) :
 		cursor = self.database.cursor()
 		# Getting kanas and studiedTimes for the word
-		cursor.execute("""SELECT kanas, studied_times FROM words WHERE id_word = ?""", (id_word,))
+		cursor.execute("""SELECT kanas, studied_times FROM words WHERE id_word = ?""", (idWord,))
 		result = cursor.fetchone()[0]
 		kanas = result[0]
 		studiedTimes = result[1]
 		# Getting meanings for the word
-		cursor.execute("""SELECT m.meaning FROM meanings AS m INNER JOIN words_meanings AS w_m ON m.id_meaning = w_m.id_meaning WHERE w_m.id_word = ?""", (id_word,))
+		cursor.execute("""SELECT m.meaning FROM meanings AS m INNER JOIN words_meanings AS w_m ON m.id_meaning = w_m.id_meaning WHERE w_m.id_word = ?""", (idWord,))
 		meanings = []
 		for m in cursor :
 			meanings.append(m)
 		# Getting the id of the kanjis for the word
-		cursor.execute("""SELECT id_kanji, position FROM words_kanjis WHERE id_word = ?""", (id,))
+		cursor.execute("""SELECT id_kanji, position FROM words_kanjis WHERE id_word = ?""", (idWord,))
 		kanjis = []
 		for couple in cursor :
-			kanjis.append(constructInWordKanji(id = cursor[0], position = cursor[1]) # /!\ create a InWordKanji class that inherits from Kanji and that has as an attribute a position in a word
+			kanjis.append(constructInWordKanji(id = cursor[0], position = cursor[1])
 		return Word(kanjis = kanjis, kanas = kanas, meanings = meanings, studiedTimes = studiedTimes)
 	
 	def loadWords(self) :
@@ -63,8 +63,9 @@ class WordsManager :
 			return wordsLike != [] # If the wordsLike list is empty, then the word is not in the database, else it is
 		return False
 		
-	def addWordToTable(self, word) : # /!\ does not add the kanjis to the related table, which must be done, preferably by KanjisManager : WordsManager calls its KanjisManager
+	def addWordToTable(self, word) :
 		if not self.isInDatabase(word) :
+			cursor = self.databas.cursor()
 			cursor.execute("""INSERT INTO words (kanas, studied_times)
 							VALUES (?, ?)""", (word.kanas, word.studiedTimes,))
 			cursor.execute("""SELECT id_word FROM words WHERE id_word = (SELECT max(id_word) FROM words)""")
@@ -84,3 +85,36 @@ class WordsManager :
 				self.kanjisManager.addKanjiToTable(k) # /!\ the addKanjiToTable method must check some things before adding the kanji to the table
 				cursor.execute("""INSERT INTO words_kanjis(id_word, id_kanji, position) VALUES (?, ?, ?)""", (idWord, self.kanjisManager.getId(k), k.position,)) # /!\ getId KanjisManager's method to implement ; testing the type of k might be necessary since the cast in python seems to be tricky
 			self.database.commit()
+			
+	def getIdByWriting(self, writing) :
+		if writing != [] :
+			cursor = self.database.cursor()
+			wordsLike = []
+			cursor.execute("""SELECT w_k.id_word FROM words_kanjis AS w_k INNER JOIN kanjis AS k ON w_k.id_kanji = k.id_kanji WHERE k.character like ?""", (word.kanjis[0].character,))
+			for id in cursor :
+				wordsLike.append(id)
+			i = 1
+			while wordsLike !=[] and i < (len(word.kanjis))
+				cursor.execute("""SELECT w_k.id_word FROM words_kanjis AS w_k INNER JOIN kanjis AS k ON w_k.id_kanji = k.id_kanji WHERE k.character like ?""", (word.kanjis[i].character,))
+				for id in cursor :
+					wordsLike.append(id)
+				i += 1
+			# At that point the list wordsLike contains all the words longer than or equal to word whose word is a prefix
+			for id in wordsLike :
+				cursor.execute("""SELECT id_word FROM words_kanjis WHERE id_word = ? AND position = ?""", (id, len(word.kanjis)+1))
+				result = cursor.fetchone()
+				if result is not None :
+					wordsLike.remove(result)
+			if wordsLike = [] :
+				raise notInTableException("Writing does not match any entry")
+			else :
+				return wordsLike[0]
+				
+				
+		
+		
+		
+		
+		
+		
+		
