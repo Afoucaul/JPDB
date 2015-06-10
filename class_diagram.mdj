@@ -5793,7 +5793,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "PracticePool",
+											"text": "PracticePool<E>",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5
 										},
@@ -9745,7 +9745,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "PracticePool",
+					"name": "PracticePool<E>",
 					"ownedElements": [
 						{
 							"_type": "UMLAssociation",
