@@ -5903,7 +5903,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "PracticePool<E>",
+											"text": "PracticePool",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5
 										},
@@ -6100,7 +6100,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+add(e: E): void",
+											"text": "+add(element: PoolElement): void",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5
 										},
@@ -6128,7 +6128,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+remove(e: E): void",
+											"text": "+remove(element: PoolElement): void",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5
 										}
@@ -10120,7 +10120,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "PracticePool<E>",
+					"name": "PracticePool",
 					"ownedElements": [
 						{
 							"_type": "UMLAssociation",
@@ -10223,11 +10223,13 @@
 									"_parent": {
 										"$ref": "AAAAAAFN3m/Ra2sWjbw="
 									},
-									"name": "e",
+									"name": "element",
 									"visibility": "public",
 									"isStatic": false,
 									"isLeaf": false,
-									"type": "E",
+									"type": {
+										"$ref": "AAAAAAFN3ySTyLc8eiU="
+									},
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,
@@ -10270,11 +10272,13 @@
 									"_parent": {
 										"$ref": "AAAAAAFN3nFVwG2DS48="
 									},
-									"name": "e",
+									"name": "element",
 									"visibility": "public",
 									"isStatic": false,
 									"isLeaf": false,
-									"type": "E",
+									"type": {
+										"$ref": "AAAAAAFN3ySTyLc8eiU="
+									},
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,
