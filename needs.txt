@@ -1,0 +1,18 @@
+- Add a word
+- Add a kanji
+- Remove a word
+- Remove a kanji
+- List the words by Japanese dictionary order
+- List the kanjis by number of strokes and by key
+- Search a word by writing, reading, meaning, related kanjis
+- Search a kanji by number of strokes, meaning
+- Display writing, reading, meanings of a word, and the kanjis related to it with their meanings
+- Display meanings, strokes and key of a kanji, and a list of related words
+- Make a pool of words to practice, that will be saved
+- Take an exam on a random selection of words, whose size might be changed
+- Keep a trace of progression ie remember the date of adding, the dates of practicing, the mistakes...
+- Display the progression
+
+I want a main window, where I can choose what I wish to do.
+Some features (adding stuff, displaying things...) will appear through a pop-up.
+The big applications (listings, making a pool, taking an exam...) will be displayed in the main window.
